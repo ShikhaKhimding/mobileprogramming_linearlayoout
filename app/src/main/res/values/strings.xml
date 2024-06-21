@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Constraint Layout</string>
+    <string name="login_ui_basic">constraint_ui</string>
+    <string name="email">email</string>
+    <string name="enter_your_email">enter your email</string>
+    <string name="password">password</string>
+    <string name="enter_your_password">enter your password</string>
+    <string name="gender">gender</string>
+    <string name="genders">submit</string>
+    <string name="submit">submit</string>
+    <string-array name="items">
+        <item>Item1</item>
+        <item>Item2</item>
+        <item>Item3</item>
+
+    </string-array>
+</resources>

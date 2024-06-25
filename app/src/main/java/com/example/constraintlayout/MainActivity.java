@@ -1,5 +1,5 @@
 package com.example.constraintlayout;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -36,7 +36,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email_input=String.valueOf(emailInput.getText());
                 String password_input=String.valueOf(passwordInput.getText());
-                Toast.makeText(MainActivity.this, "Email:"+email_input + "\n" + "Password:" + password_input, Toast.LENGTH_SHORT).show();
+                String gender_input=String.valueOf(genderSpinner.getSelectedItem());
+                //Toast.makeText(MainActivity.this, "Email:"+email_input + "\n" + "Password:" + password_input, Toast.LENGTH_SHORT).show();
+
+                Intent intent=new Intent(MainActivity.this,SecondPage.class);
+                intent.putExtra("email",email_input);
+                intent.putExtra("password",password_input);
+                intent.putExtra("gender",gender_input);
+                startActivity(intent);
             }
         });
 
